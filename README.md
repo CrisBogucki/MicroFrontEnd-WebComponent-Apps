@@ -5,7 +5,6 @@ Structure of monorepo project
 - **gframe (/projects/gframe):** Global frame for including all micro app
 - **micro-app-1 (/projects/l-micro-app1)**: Local app 1
 - **micro-app-2 (/projects/l-micro-app1)**: Local app 2
-- **micro-app-3 (/projects/l-micro-app1)**: Local app 3
 
 ## Create monorepo
 
