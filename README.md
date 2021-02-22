@@ -1,27 +1,61 @@
-# MfeWebApp
+# Micro Web Apps with Web Components and Angular Elements
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+Structure of monorepo project
 
-## Development server
+- **gframe (/projects/gframe):** Global frame for including all micro app
+- **micro-app-1 (/projects/l-micro-app1)**: Local app 1
+- **micro-app-2 (/projects/l-micro-app1)**: Local app 2
+- **micro-app-3 (/projects/l-micro-app1)**: Local app 3
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Create monorepo
 
-## Code scaffolding
+Script for create monorepo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
 
-## Build
+ng new microfrontend --create-application false
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
 
-## Running unit tests
+## Create apps
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Scripts for create app apps in project
 
-## Running end-to-end tests
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+ng g application gframe --style=scss
+ng g application l-micro-app1 --routing --style=scss
+ng g application l-micro-app2 --routing --style=scss
 
-## Further help
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Install Dependencies
+
+```
+
+npm install
+
+```
+
+## Standalone
+
+Scripts for running app in standalone mode:
+
+```
+
+ng serve --project shell --open
+ng serve --project client-a --open
+ng serve --project client-b --open
+
+```
+
+## Everything together
+
+For using everything together, you have to build the example and run it:
+
+```
+
+npm run build
+npm start
+
+```
