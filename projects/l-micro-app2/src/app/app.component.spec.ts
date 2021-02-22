@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'l-micro-app2'`, () => {
+  it(`should have as title 'app-sample2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('l-micro-app2');
+    expect(app.title).toEqual('app-sample2');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('l-micro-app2 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('app-sample2 app is running!');
   });
 });
