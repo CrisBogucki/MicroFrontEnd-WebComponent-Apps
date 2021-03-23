@@ -4,7 +4,7 @@ Structure of monorepo project
 
 - **gframe (/projects/gframe):** Global frame for including all micro app
 - **micro-app-1 (/projects/l-micro-app1)**: Local app 1
-- **micro-app-2 (/projects/l-micro-app1)**: Local app 2
+- **micro-app-2 (/projects/l-micro-app2)**: Local app 2
 
 ## Create monorepo
 
@@ -42,9 +42,9 @@ Scripts for running app in standalone mode:
 
 ```
 
-ng serve --project shell --open
-ng serve --project client-a --open
-ng serve --project client-b --open
+ng serve --project gframe --open
+ng serve --project l-micro-app1 --open
+ng serve --project l-micro-app2 --open
 
 ```
 
